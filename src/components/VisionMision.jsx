@@ -3,7 +3,7 @@ import { Target, Flag } from "lucide-react";
 
 const VisionMision = () => {
   const fadeInSide = (direction) => ({
-    hidden: { opacity: 0, x: direction === "left" ? -50 : 50 },
+    hidden: { opacity: 0, x: -50 },
     visible: {
       opacity: 1,
       x: 0,
