@@ -21,7 +21,7 @@ const DonationForm = ({ Icon, text, color }) => {
     phone: "",
     amount: "",
     paymentMethod: "Mpesa",
-    clothingType: "",
+    // clothingType: "",
     foodType: "",
     volunteerRole: "",
   });
@@ -72,7 +72,7 @@ const DonationForm = ({ Icon, text, color }) => {
           {/* Tabs for Donation Categories */}
           <Tabs value={activeTab} onChange={handleTabChange} centered>
             <Tab label="Money" />
-            <Tab label="Clothes" />
+            {/* <Tab label="Clothes" /> */}
             <Tab label="Food" />
             <Tab label="Volunteer" />
           </Tabs>
@@ -128,7 +128,7 @@ const DonationForm = ({ Icon, text, color }) => {
               </>
             )}
 
-            {activeTab === 1 && (
+            {/* {activeTab === 1 && (
               <TextField
                 label="Type of Clothes (e.g., Shirts, Jackets)"
                 name="clothingType"
@@ -138,7 +138,7 @@ const DonationForm = ({ Icon, text, color }) => {
                 required
                 margin="normal"
               />
-            )}
+            )} */}
 
             {activeTab === 2 && (
               <TextField
