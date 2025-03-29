@@ -14,7 +14,7 @@ const Conclusion = () => {
 
   return (
     <motion.div
-      className="bg-white p-6 sm:p-8 shadow-lg rounded-lg flex flex-col sm:flex-row items-start gap-6 border-l-4 border-blue-500 w-full"
+      className="bg-white p-2 sm:p-8 shadow-lg rounded-lg flex flex-col sm:flex-row items-start gap-6 md:border-l-4 md:border-blue-500 w-full"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
