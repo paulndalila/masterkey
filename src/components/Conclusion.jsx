@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Flag } from "lucide-react";
+import conc from "../assets/images/concu.jpg";
 
 const Conclusion = () => {
   const fadeInUp = {
@@ -13,18 +14,30 @@ const Conclusion = () => {
 
   return (
     <motion.div
-      className="bg-beige-200 p-8 shadow-lg flex items-start gap-6 border-l-4 border-blue-400"
+      className="bg-white p-6 sm:p-8 shadow-lg rounded-lg flex flex-col sm:flex-row items-start gap-6 border-l-4 border-blue-500 w-full"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeInUp}
     >
-      <Flag className="text-brown-600 w-10 h-10 flex-shrink-0" />
-      <div>
-        <h3 className="text-3xl font-bold text-gray-800 mb-4 tracking-wide">
-          Conclusion
-        </h3>
-        <p className="text-gray-700 leading-relaxed text-lg text-justify">
+      {/* Image Section */}
+      <div className="w-full sm:w-1/3">
+        <img
+          src={conc}
+          alt="Mentorship"
+          className="rounded-lg object-cover w-full h-auto"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="w-full sm:w-2/3">
+        <div className="flex items-center gap-3 mb-4">
+          <Flag className="text-blue-500 w-8 h-8 flex-shrink-0" />
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 tracking-wide">
+            Conclusion
+          </h3>
+        </div>
+        <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify">
           The Master Key Mentorship Society is more than an organization—it is a
           movement dedicated to equipping Kenyan youth with the skills,
           confidence, and mindset needed to become transformational leaders. By
@@ -32,7 +45,7 @@ const Conclusion = () => {
           empower young people to rise above challenges and drive sustainable
           change in their families, communities, and the nation at large.
         </p>
-        <p className="text-gray-700 leading-relaxed mt-4 text-lg text-justify">
+        <p className="text-gray-700 leading-relaxed mt-4 text-base sm:text-md text-justify">
           Through mentorship, leadership training, and development programs, we
           nurture a generation of responsible, innovative, and goal-driven
           individuals who are prepared to lead Kenya into a brighter future.
