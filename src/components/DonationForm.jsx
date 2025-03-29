@@ -140,7 +140,7 @@ const DonationForm = ({ Icon, text, color }) => {
               />
             )} */}
 
-            {activeTab === 2 && (
+            {activeTab === 1 && (
               <TextField
                 label="Type of Food (e.g., Rice, Canned Goods)"
                 name="foodType"
@@ -152,7 +152,7 @@ const DonationForm = ({ Icon, text, color }) => {
               />
             )}
 
-            {activeTab === 3 && (
+            {activeTab === 2 && (
               <TextField
                 label="Preferred Volunteer Role"
                 name="volunteerRole"
