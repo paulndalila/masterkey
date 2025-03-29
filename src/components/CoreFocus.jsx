@@ -14,7 +14,7 @@ const CoreFocus = () => {
 
   return (
     <motion.div
-      className="bg-beige-200 p-2 md:p-8 shadow-lg flex flex-col md:flex-row items-center gap-6 md:border-l-4 md:border-red-700"
+      className="bg-beige-200 p-2 md:p-8 md:shadow-lg flex flex-col md:flex-row items-center gap-6 md:border-l-4 md:border-red-700"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
