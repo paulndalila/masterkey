@@ -7,26 +7,26 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
-    `block text-white hover:text-gray-200 transition-all duration-300 ${
-      isActive ? "border-b-2 border-white font-bold" : ""
+    `block  text-gray-800 hover:text-rose-900 transition-all duration-300 ${
+      isActive ? "border-b-2 border-gray-800 font-bold" : ""
     }`;
 
   return (
-    <nav className="bg-black bg-opacity-50 text-white p-2 md:p-4 fixed w-full top-0 z-50">
+    <nav className="bg-gray-50 bg-opacity-50 text-white p-2 shadow-sm md:p-4 fixed w-full top-0 z-50">
       <div className="md:max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center space-x-3">
           <img
-            src="/masterkey.webp"
-            className="h-8 rounded"
+            src="/logo.png"
+            className="bg-white w-8 h-8 rounded"
             alt="Masterkey Logo"
           />
-          <h1 className="self-center text-xl font-semibold whitespace-nowrap">
+          <h1 className="self-center text-xl font-semibold whitespace-nowrap text-gray-800">
             Masterkey Initiatives.
           </h1>
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-baseline space-x-6">
+        <div className="hidden md:flex items-baseline space-x-6 ">
           <NavLink
             to="/"
             onClick={() => (window.location.href = "/")}
@@ -60,7 +60,7 @@ const Navbar = () => {
             onClick={() => (window.location.href = "/contact-us")}
             className={linkClass}
           >
-            Contact Us
+            Partner With Us
           </NavLink>
 
           {/* Donate Button with Icon */}
@@ -69,7 +69,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle Button */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-gray-800"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -82,7 +82,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-4 p-4 mt-2 rounded bg-black bg-opacity-80">
+        <div className="md:hidden flex flex-col space-y-4 p-4 mt-2 rounded bg-opacity-80">
           <NavLink
             to="/"
             className={linkClass}
@@ -122,7 +122,7 @@ const Navbar = () => {
               setIsOpen(false)((window.location.href = "/contact-us"))
             }
           >
-            Contact Us
+            Partner With Us
           </NavLink>
 
           {/* Mobile Donate Button */}

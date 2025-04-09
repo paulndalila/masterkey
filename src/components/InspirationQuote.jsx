@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const InspirationQuote = () => {
+const InspirationQuote = (props) => {
   return (
     <motion.div
       className="bg-white p-8 text-center"
@@ -9,8 +9,7 @@ const InspirationQuote = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <p className="text-xl font-semibold italic text-gray-700">
-        "The youth of today are the leaders of tomorrow. Equip them with the
-        right tools, and they will change the world."
+        "{props.text}"
       </p>
       <span className="block mt-4 text-gray-600 font-medium">
         — MasterKey Mentorship Society

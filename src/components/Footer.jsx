@@ -15,13 +15,13 @@ const Footer = () => {
                 <a href="#">P.O. BOX 333 Maseno,</a>
               </li>
               <li className="mb-4">
-                <a href="mailto:info@masterkeyinitiatives.co.ke">
+                <a href="mailto:masterkeyinitiatives@gmail.com">
                   info@masterkeyinitiatives.co.ke
                 </a>
               </li>
               <li className="mb-4">
-                <a href="tel:0769257996" className="hover:underline">
-                  Reach out
+                <a href="tel:+254720943352" className="hover:underline">
+                  Whatsapp Us on +254 720943352
                 </a>
               </li>
             </ul>
@@ -47,7 +47,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="tel:+254720943352" className="hover:underline">
                   Whatsapp
                 </a>
               </li>
@@ -108,8 +108,8 @@ const Footer = () => {
               <span>
                 If you experienced any issues with our services with any of our
                 staffs, kindly reach out to{" "}
-                <a href="tel:0769257996" className="underline">
-                  call this number
+                <a href="tel:+254720943352" className="underline">
+                  +254720943352
                 </a>
                 . We will review it promptly.
               </span>

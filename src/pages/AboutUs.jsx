@@ -68,7 +68,11 @@ const AboutUs = () => {
             {/* Conclusion */}
             <Conclusion />
 
-            <InspirationQuote />
+            <InspirationQuote
+              text={
+                "The youth of today are the leaders of tomorrow. Equip them with the right tools, and they will change the world."
+              }
+            />
           </div>
         </div>
       </section>

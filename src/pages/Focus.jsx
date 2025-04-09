@@ -8,8 +8,9 @@ import {
   Handshake,
 } from "lucide-react";
 import DonationForm from "../components/DonationForm";
-import togetherPhoto from "../assets/images/banner.jpg";
-import { Divider } from "@mui/material";
+// import togetherPhoto from "../assets/images/banner.jpg";
+// import { Divider } from "@mui/material";
+import WhoWeAreCont from "../components/WhoWeAreCont";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -94,7 +95,7 @@ const Focus = () => {
         <DonationForm text={"Volunteer"} Icon={Handshake} color={"secondary"} />
       </div>
 
-      {/* Image Section */}
+      <WhoWeAreCont />
     </div>
   );
 };
