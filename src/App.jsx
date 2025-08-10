@@ -9,47 +9,57 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./css/app.css";
 import Focus from "./pages/Focus";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
     <Router>
-      <div className="pt-12 md:pt-17">
+      <div>
         <Routes>
           <Route path="/" element={<AboutUs />} />
           <Route
             path="/our-vision"
             element={
-              <>
+              <div className="pt-12 md:pt-17">
                 <Navbar />
                 <Vision />
-              </>
+              </div>
             }
           />
           <Route
             path="/contact-us"
             element={
-              <>
+              <div className="pt-12 md:pt-17">
                 <Navbar />
                 <ContactUs />
-              </>
+              </div>
             }
           />
           <Route
             path="/our-team"
             element={
-              <>
+              <div className="pt-12 md:pt-17">
                 <Navbar />
                 <Team />
-              </>
+              </div>
+            }
+          />
+          <Route
+            path="/profile/:name/:role/:imageUrl/:bio/:email"
+            element={
+              <div className="pt-12 md:pt-17">
+                <Navbar />
+                <Profile />
+              </div>
             }
           />
           <Route
             path="/focus"
             element={
-              <>
+              <div className="pt-12 md:pt-17">
                 <Navbar />
                 <Focus />
-              </>
+              </div>
             }
           />
           <Route
@@ -65,7 +75,6 @@ function App() {
             path="*"
             element={
               <>
-                <Navbar />
                 <Error />
               </>
             }

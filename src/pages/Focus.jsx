@@ -37,7 +37,11 @@ const FocusArea = ({ icon: Icon, title, children }) => (
 
 const Focus = () => {
   return (
-    <div className="py-8 container mx-auto px-4 md:px-6 lg:px-20">
+    <div className="relative py-8 container mx-auto px-4 md:px-6 lg:px-20 bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+      {/* Decorative blobs */}
+      <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-purple-300 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-[-120px] right-[-120px] w-[350px] h-[350px] bg-indigo-300 rounded-full blur-3xl opacity-30"></div>
+
       <motion.h2
         className="focus_text pt-6 w-full md:w-1/2 text-center md:text-left text-5xl md:text-6xl font-extrabold mb-10 text-gray-800"
         initial="hidden"
