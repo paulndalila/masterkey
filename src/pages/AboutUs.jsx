@@ -26,7 +26,7 @@ const AboutUs = () => {
       <div
         className="relative min-h-screen bg-cover bg-center"
         style={{
-          backgroundImage: "url('/masterkey.png')",
+          backgroundImage: "url('/masterkey.jpg')",
         }}
       >
         {/* Navbar */}

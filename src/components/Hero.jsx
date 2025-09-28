@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <div className="flex items-center justify-center h-screen text-brown-800 text-center px-6 bg-beige-100">
       <motion.div
-        className="relative max-w-2xl flex flex-col gap-4 mt-20 z-10"
+        className="relative max-w-2xl flex flex-col gap-4 mt-20 z-10 bg-gray-900/5 md:p-5"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
