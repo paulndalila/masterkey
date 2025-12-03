@@ -41,13 +41,6 @@ const Navbar = () => {
           >
             Blog
           </NavLink>
-          {/* <NavLink
-            to="/blog/:id"
-            onClick={() => (window.location.href = "/blog/:id")}
-            className={linkClass}
-          >
-            Blogged Article
-          </NavLink> */}
           <NavLink
             to="/focus"
             onClick={() => (window.location.href = "/focus")}
@@ -103,6 +96,13 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)((window.location.href = "/"))}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/blog"
+            onClick={() => (window.location.href = "/blog")}
+            className={linkClass}
+          >
+            Blog
           </NavLink>
           <NavLink
             to="/focus"

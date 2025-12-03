@@ -27,11 +27,11 @@ const HomeBlog = () => {
         >
           <div className="flex items-center gap-3">
             <CampaignIcon className="text-gray-900 !text-4xl" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
               Latest Updates & News
             </h2>
           </div>
-          <p className="text-gray-600 mt-2 text-lg">
+          <p className="text-gray-600 mt-2 md:text-lg">
             A glimpse into our latest initiative and ongoing impact.
           </p>
         </motion.div>
@@ -58,31 +58,23 @@ const HomeBlog = () => {
               {latestPost.title}
             </h3>
 
-            <p className="text-gray-700 mt-3 leading-relaxed line-clamp-1">
+            <p className="text-gray-700 mt-3 leading-relaxed line-clamp-2">
               {latestPost.excerpt}
             </p>
 
-            <div className="flex items-center gap-4 mt-6">
-              <Button
-                variant="text"
-                className="!text-blue-700 !font-semibold"
-                onClick={() =>
-                  (window.location.href = `/blog/${latestPost.id}`)
-                }
+            <div className="flex flex-col gap-4 mt-6">
+              <a
+                className="text-sm text-blue-700 font-semibold hover:underline w-fit"
+                href={`/blog/${latestPost.id}/${latestPost.title}`}
               >
                 Read Full Story →
-              </Button>
-            </div>
-
-            <div className="mt-8">
-              <Button
-                variant="contained"
-                size="large"
-                className="!bg-blue-700 hover:!bg-blue-800 text-white rounded-xl px-10 py-2 !capitalize"
-                onClick={() => (window.location.href = "/blog")}
+              </a>
+              <a
+                className="text-sm bg-blue-700 hover:bg-blue-800 text-white rounded-sm px-4 py-2 w-fit"
+                href="/blog"
               >
                 View All Blogs
-              </Button>
+              </a>
             </div>
           </div>
         </motion.div>
