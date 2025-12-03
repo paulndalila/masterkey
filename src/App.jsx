@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import "./css/app.css";
 import Focus from "./pages/Focus";
 import Profile from "./pages/Profile";
+import Blog from "./pages/Blog";
+import Blogged_Page from "./pages/Blogged_Page";
 
 function App() {
   return (
@@ -23,6 +25,24 @@ function App() {
               <div className="pt-12 md:pt-17">
                 <Navbar />
                 <Vision />
+              </div>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <div className="pt-12 md:pt-17">
+                <Navbar />
+                <Blog />
+              </div>
+            }
+          />
+          <Route
+            path="/blog/:id/:title"
+            element={
+              <div className="pt-12 md:pt-17">
+                <Navbar />
+                <Blogged_Page />
               </div>
             }
           />

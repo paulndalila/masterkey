@@ -16,7 +16,7 @@ const Hero = () => {
     const interval = setInterval(() => {
       index = (index + 1) % heroTexts.length; // Loop through texts
       setCurrentText(heroTexts[index]);
-    }, 4000); // Change every 4 seconds
+    }, 5000); // Change every 4 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);

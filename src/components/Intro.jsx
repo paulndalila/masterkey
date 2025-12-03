@@ -12,7 +12,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="bg-beige-200 rounded-xl shadow-md flex flex-col md:flex-row gap-2 md:gap-0 items-center justify-center p-6 mb-12 border-b-2 border-red-300">
+    <div className="bg-beige-200 shadow-md flex flex-col md:flex-row gap-2 md:gap-0 items-center justify-center p-6 mb-12 border-b-2 border-red-300">
       <motion.img
         src={banner}
         alt="Master Key Logo"
