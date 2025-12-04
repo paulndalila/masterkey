@@ -1,10 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Button } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import VisionMision from "../components/VisionMision";
 import GetInvolved from "../components/GetInvolved";
+import InspirationQuote from "../components/InspirationQuote";
 
 const Blogged_Page = () => {
   const { id } = useParams();
@@ -89,7 +88,12 @@ const Blogged_Page = () => {
         </div>
 
         {/* AOB */}
-        <div className="py-10">
+        <div className="flex flex-col gap-10 max-w-7xl mx-auto my-10">
+          <InspirationQuote
+            text="When a storm attacks, all big trees get uprooted, but simple grass always survives. Being simple and egoless makes us more powerful and stable."
+            who="Mindsets"
+          />
+
           <GetInvolved />
         </div>
       </div>

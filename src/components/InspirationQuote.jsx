@@ -12,7 +12,7 @@ const InspirationQuote = (props) => {
         "{props.text}"
       </p>
       <span className="block mt-4 text-gray-600 font-medium">
-        — MasterKey Mentorship Society
+        — {props.who ? props.who : "MasterKey Mentorship Society"}
       </span>
     </motion.div>
   );

@@ -16,7 +16,7 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <a href="mailto:masterkeyinitiatives@gmail.com">
-                  info@masterkeyinitiatives.co.ke
+                  info@masterkeyinitiatives.org
                 </a>
               </li>
               <li className="mb-4">
